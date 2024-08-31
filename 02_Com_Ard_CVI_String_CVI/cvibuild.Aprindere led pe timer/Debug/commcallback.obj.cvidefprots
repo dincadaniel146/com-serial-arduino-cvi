@@ -1,0 +1,35 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:47:5"
+
+[Start_Aplicatie]
+Class="Function"
+Prototype="int Start_Aplicatie(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:84:17"
+
+[Functie_Receptie_Pe_Intrerupere]
+Class="Function"
+Prototype="void Functie_Receptie_Pe_Intrerupere(int portNo, int eventMask, void *callbackData);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:103:18"
+
+[Refresh_Graph]
+Class="Function"
+Prototype="int Refresh_Graph(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:206:17"
+
+[Quit]
+Class="Function"
+Prototype="int Quit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:220:17"
+
+[Help]
+Class="Function"
+Prototype="int Help(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:233:17"
+
+[QuitHelp]
+Class="Function"
+Prototype="int QuitHelp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c:247:17"
+

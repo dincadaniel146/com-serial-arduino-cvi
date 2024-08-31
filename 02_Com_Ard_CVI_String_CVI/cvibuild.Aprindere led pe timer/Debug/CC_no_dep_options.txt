@@ -1,0 +1,1 @@
+-force-include-file "commcallback.c";"c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.c" -force-include-file "commcallback.h";"c:\Users\dinca\Desktop\Task_02_Arduino_CVI\02_Com_Ard_CVI_String_CVI\commcallback.h" 
