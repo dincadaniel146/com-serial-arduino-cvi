@@ -1,5 +1,16 @@
-Proiect practica utilizand Arduino Uno si Labwindows CVI
+# Comunicatie in timp real dintre Arduino Uno si LabWindows/CVI
 
 Acest proiect realizat in timpul stagiului de practica demonstreaza comunicatia in timp real dintre o placa Arduino Uno si aplicatia LabWindows CVI.
-LabWindows CVI trimite comenzi de control (semnal de referinta, perioada de esantionare si starea led-ului) catre Arduino prin portul serial.
-Arduino proceseaza aceste comenzi, efectueaza logica de control si trimite datele inapoi la LabWindows CVI pentru vizualizarea acestora in interfata grafica.
+
+Astfel, LabWindows serveste ca interfata grafica si ofera utilizatorului o modalitate de a simula si vizualiza comportamentul unui sistem controlat in timp real.
+
+## Mod de functionare:
+
+- LabWindows CVI trimite comenzi precum semnalul de referinta, perioada de esantionare si starea LED-ului catre Arduino prin portul serial.
+
+- Arduino verifica daca datele sunt disponibile in memoria tampon serial, le citeste si le converteste in valori numerice urmand a fi atribuite variabilelor de control `Refk` , `Te` , `led`. Acesta efectueaza calcule pentru a actualiza iesirea de control `yk` utilizand o ecuatie de sistem in timp discret si porneste/stinge LED-ul in functie de valoarea stareled primita de la LabWindows CVI.
+
+- Pentru executia periodica a functiei de esantionare, este initializat si setat o intrerupere a temporizatorului utilizand `TimerOne`.
+
+- LabWindows/CVI actualizeaza interfata grafica cu datele primite de la Arduino, permitand monitorizarea si controlul in timp real al sistemului.
+
