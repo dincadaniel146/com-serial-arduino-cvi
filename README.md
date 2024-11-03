@@ -10,7 +10,7 @@ Astfel, LabWindows serveste ca interfata grafica si ofera utilizatorului o modal
 
 - Arduino verifica daca datele sunt disponibile in memoria tampon serial, le citeste si le converteste in valori numerice urmand a fi atribuite variabilelor de control `Refk` , `Te` , `led`. Acesta efectueaza calcule pentru a actualiza iesirea de control `yk` utilizand o ecuatie de sistem in timp discret si porneste/stinge LED-ul in functie de valoarea `stareled` primita de la LabWindows CVI.
 
-- Pentru executia periodica a functiei de esantionare, este initializataa si setata o intrerupere a temporizatorului utilizand `TimerOne`.
+- Pentru executia periodica a functiei de esantionare, este initializata si setata o intrerupere a temporizatorului utilizand `TimerOne`.
 
 - LabWindows/CVI actualizeaza interfata grafica cu datele primite de la Arduino, permitand monitorizarea si controlul in timp real al sistemului.
 
